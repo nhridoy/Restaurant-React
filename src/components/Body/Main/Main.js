@@ -5,7 +5,7 @@ const Main = (props) => {
   //   console.log(props.restaurant_info.restaurant[0]);
   return props.restaurant_info.restaurant[0].categorys.map((item, index) => {
     return (
-      <div>
+      <div key={item.id}>
         <h2 className="text-center font-monospace text-uppercase mt-3">
           {item.name}
         </h2>
