@@ -1,7 +1,9 @@
+import Restaurants from "./Restaurants";
+
 const Body = () => {
   return (
     <div>
-      <p>Body</p>
+      <Restaurants />
     </div>
   );
 };

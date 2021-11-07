@@ -3,7 +3,7 @@ import MainComponent from "./components/MainComponent";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="">
       <MainComponent />
     </div>
   );

@@ -1,0 +1,39 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.banner-overlay {
+  position: absolute;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.h1 {
+  font-size: 4rem !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.d-grid {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
