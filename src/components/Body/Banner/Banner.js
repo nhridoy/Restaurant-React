@@ -12,6 +12,11 @@ const Banner = (props) => {
       <div className="banner">
         <div className="banner-overlay">
           <div className="container">
+            <img
+              className="mt-1"
+              src={props.restaurant_info.restaurant[0].restaurant_info.logo}
+              alt={props.restaurant_info.restaurant[0].restaurant_info.name}
+            />
             <h1 className="h1">
               {props.restaurant_info.restaurant[0].restaurant_info.name}
             </h1>

@@ -11,7 +11,7 @@ const restaurants = [
       minimum_order_price: "300.00",
       delivery_fee: "75.00",
       avg_delivery_time: "60",
-      logo: "https://s3_ap_southeast_2.amazonaws.com/aisdevtest/img/2b41b7bbf6da38212e1163c428d44f3a58b1487817bf3.jpg",
+      logo: "https://s3-ap-southeast-2.amazonaws.com/aisdevtest/img/2b41b7bbf6da38212e1163c428d44f3a58b1487817bf3.jpg",
       open_status: "1",
       default_ad: "",
       review_enabled: "1",
