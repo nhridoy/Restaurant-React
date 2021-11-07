@@ -1,5 +1,5 @@
 import { Component } from "react";
-import restaurants from "../data/restaurants";
+import restaurants from "../../data/restaurants";
 import Banner from "./Banner/Banner";
 import Main from "./Main/Main";
 
