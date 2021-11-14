@@ -2,6 +2,7 @@ import { Component } from "react";
 import restaurants from "../../data/restaurants";
 import Banner from "./Banner/Banner";
 import Main from "./Main/Main";
+import MenuModal from "./Main/MenuModal";
 
 class Restaurants extends Component {
   state = {
@@ -15,6 +16,7 @@ class Restaurants extends Component {
         <div className="container">
           <Main restaurant_info={this.state} />
         </div>
+        <MenuModal />
       </div>
     );
   }

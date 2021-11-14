@@ -10,7 +10,7 @@ const Main = (props) => {
           {item.name}
         </h2>
         <div className="text-center">
-          <div className="grid gap-2">
+          <div className="row justify-content-center align-content-center">
             <MenuCard menu_items={item.menu_items} />
           </div>
         </div>
