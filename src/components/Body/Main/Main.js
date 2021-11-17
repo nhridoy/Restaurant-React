@@ -11,7 +11,10 @@ const Main = (props) => {
         </h2>
         <div className="text-center">
           <div className="row justify-content-center align-content-center">
-            <MenuCard menu_items={item.menu_items} />
+            <MenuCard
+              menu_items={item.menu_items}
+              selectedRestaurant={props.selectedRestaurant}
+            />
           </div>
         </div>
       </div>

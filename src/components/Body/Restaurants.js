@@ -7,6 +7,11 @@ import MenuModal from "./Main/MenuModal";
 class Restaurants extends Component {
   state = {
     restaurant: restaurants,
+    selected: null,
+  };
+  selectedRestaurant = (dish) => {
+    this.setState({ selected: dish });
+    // console.log(this.state.selected);
   };
 
   render() {
@@ -14,9 +19,12 @@ class Restaurants extends Component {
       <div>
         <Banner restaurant_info={this.state} />
         <div className="container">
-          <Main restaurant_info={this.state} />
+          <Main
+            restaurant_info={this.state}
+            selectedRestaurant={this.selectedRestaurant}
+          />
         </div>
-        <MenuModal />
+        <MenuModal subItems={this.state.selected} />
       </div>
     );
   }

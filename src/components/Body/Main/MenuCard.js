@@ -10,6 +10,7 @@ const MenuCard = (props) => {
           style={{ cursor: "pointer" }}
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
+          onClick={() => props.selectedRestaurant(item)}
         >
           <CardBody>
             <CardTitle tag="h5">{item.name}</CardTitle>

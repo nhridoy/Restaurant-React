@@ -1038,7 +1038,7 @@ const restaurants = [
             id: "94325",
             name: "Coleslaw (M)",
             position: 25,
-            description: "Cabbage, Carrot, Nando&amp;#039;s Special Mayonnaise",
+            description: "Cabbage, Carrot, Nando's Special Mayonnaise",
             images: [],
             sub_items: [
               {
@@ -1157,7 +1157,7 @@ const restaurants = [
             name: "Portuguese Salad",
             position: 28,
             description:
-              "Fresh Tomato, Nando&amp;#039;s Peri_Olives, Mixed Peppers, Cucumber and Onion on A Bed of Crisp Lettuce",
+              "Fresh Tomato, Nando's Peri_Olives, Mixed Peppers, Cucumber and Onion on A Bed of Crisp Lettuce",
             images: [],
             sub_items: [
               {

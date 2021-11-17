@@ -1,4 +1,10 @@
-const MenuModal = () => {
+import ModalInside from "./ModalInside";
+
+const MenuModal = (props) => {
+  let isEmpty = null;
+  props.subItems
+    ? (isEmpty = <ModalInside item={props.subItems.sub_items} />)
+    : (isEmpty = null);
   return (
     <div
       class="modal fade"
@@ -7,11 +13,11 @@ const MenuModal = () => {
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Modal title
+              {props.subItems ? props.subItems.name : "Header"}
             </h5>
             <button
               type="button"
@@ -20,7 +26,11 @@ const MenuModal = () => {
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body ">
+            <div class="container-fluid">
+              <div className="row gap-2">{isEmpty}</div>
+            </div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -28,9 +38,6 @@ const MenuModal = () => {
               data-bs-dismiss="modal"
             >
               Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
             </button>
           </div>
         </div>
