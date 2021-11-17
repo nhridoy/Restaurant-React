@@ -1,10 +1,11 @@
 const ModalInside = (props) => {
-  console.log(props);
+  // console.log(props);
   return props.item.map((item, index) => {
     return (
       <div
         style={{ border: "1px solid #666", padding: "10px" }}
         className="col"
+        key={item.id}
       >
         <div>
           <div>
