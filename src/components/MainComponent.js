@@ -1,4 +1,4 @@
-import Body from "./Body/Body";
+import Body from "./Body/Pages/Body";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 

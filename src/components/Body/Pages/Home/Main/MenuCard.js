@@ -8,8 +8,8 @@ const MenuCard = (props) => {
           color="light"
           className="h-100"
           style={{ cursor: "pointer" }}
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          // data-bs-toggle="modal"
+          // data-bs-target="#exampleModal"
           onClick={() => props.selectedRestaurant(item)}
         >
           <CardBody>

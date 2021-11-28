@@ -1,5 +1,5 @@
-import "../../../assets/stylesheets/style.css";
-import Locations from "./Locations";
+import "../../../../../assets/stylesheets/style.css";
+import Locations from ".//Locations";
 const Banner = (props) => {
   // console.log(
   //   props.restaurant_info.restaurant[0].restaurant_info.deliverable_area
