@@ -14,6 +14,7 @@ class Contact extends Component {
       method: "sms",
     };
     this.inputHandler = this.inputHandler.bind(this);
+    this.submitHandler = this.submitHandler.bind(this);
   }
 
   inputHandler = (e) => {
@@ -25,15 +26,19 @@ class Contact extends Component {
     });
   };
 
-  submitHandler = (e) => {};
+  submitHandler = (e) => {
+    console.log(this.state);
+    e.preventDefault();
+  };
 
   render() {
+    document.title = "Contact";
     return (
       <div className="container">
         <Row className="py-2">
           <Col>
             <h2>Contact Us</h2>
-            <Form>
+            <Form onSubmit={this.submitHandler}>
               <FormGroup>
                 <Label htmlFor="name">Name:</Label>
                 <Input

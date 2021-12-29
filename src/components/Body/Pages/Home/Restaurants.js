@@ -21,6 +21,7 @@ class Restaurants extends Component {
   };
 
   render() {
+    document.title = "Nandos";
     return (
       <div>
         <Banner restaurant_info={this.state} />
