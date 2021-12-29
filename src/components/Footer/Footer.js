@@ -4,12 +4,14 @@ import FooterMenu from "./FooterMenu";
 const Footer = () => {
   return (
     <div className="bg-dark text-white">
-      <div className="row mx-0 py-3">
-        <div className="col">
-          <FooterMap />
-        </div>
-        <div className="col">
-          <FooterMenu />
+      <div className="container">
+        <div className="row mx-0 py-3">
+          <div className="col">
+            <FooterMap />
+          </div>
+          <div className="col">
+            <FooterMenu />
+          </div>
         </div>
       </div>
       <div className="bg-black text-center">

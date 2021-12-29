@@ -4,9 +4,11 @@ import Header from "./Header/Header";
 
 const MainComponent = () => {
   return (
-    <div>
-      <Header />
-      <Body />
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+      <div style={{ flex: "1" }}>
+        <Header />
+        <Body />
+      </div>
       <Footer />
     </div>
   );
